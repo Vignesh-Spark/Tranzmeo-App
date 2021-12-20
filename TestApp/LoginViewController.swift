@@ -90,7 +90,7 @@ class LoginViewController: UIViewController {
             
             do {
                 let json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-                print(json)
+//                print(json)
                 if let dictionary = json as? [String: Any] {
                     if let token = dictionary["accessToken"] as? String {                   
                         
